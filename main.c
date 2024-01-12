@@ -1,23 +1,23 @@
 /************************************
- * #pragma directives...
+ * Configuring registers before beginning
 ************************************/
 #pragma config FEXTOSC = HS
 #pragma config RSTOSC = EXTOSC_4PLL 
 #pragma config WDTE = OFF        
 
 /************************************
- * #include directives...
+ * List containing pin names for the PIC chip, and maps code to correct locations
  ************************************/
 #include <xc.h>
 
 /************************************
- * #define directives...
+ * Sets the chip oscillator speed
  ************************************/
 #define _XTAL_FREQ 64000000 
 
 /************************************
 / main function
- * ...
+ * Toggle lights on and off based on button inputs
 ************************************/
 void main(void) {    
     // setup pin for output (connected to LED)
